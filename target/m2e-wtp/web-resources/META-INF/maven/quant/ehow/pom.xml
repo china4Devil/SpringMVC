@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>quant</groupId>
+  <artifactId>ehow</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ehow Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+     <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.0.0.BUILD-SNAPSHOT</version>
+    </dependency>
+     <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>5.0.0.BUILD-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>5.0.0.BUILD-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.0.0.BUILD-SNAPSHOT</version>
+	</dependency>
+	
+	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.0.0.M5</version>
+	</dependency>
+	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>5.0.0.M5</version>
+			<scope>system</scope>
+			<systemPath>D:/mvn_path/springframe/spring-tx-5.0.0.M5.jar</systemPath>
+	</dependency>
+	 
+	 <dependency>  
+            <groupId>org.mybatis</groupId>  
+            <artifactId>mybatis-spring</artifactId>  
+            <version>1.3.1</version>  
+     </dependency>
+     
+     <dependency>  
+            <groupId>mysql</groupId>  
+            <artifactId>mysql-connector-java</artifactId>  
+            <version>6.0.2</version>  
+     </dependency> 
+	
+    <!-- 采用本地库进行加载 -->
+  </dependencies>
+  <repositories>
+    <repository>  
+          <id>Alfresco Public</id>  
+          <url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>  
+          <snapshots>
+          	<enabled>false</enabled>
+          </snapshots>  
+     </repository> 
+  </repositories>
+  <build>
+    <finalName>ehow</finalName>
+  </build>
+</project>
